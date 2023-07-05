@@ -72,6 +72,12 @@
               <span class="link-title">View List SO</span>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="{{url('/')}}" class="nav-link">
+              <i class="link-icon" data-feather="box"></i>
+              <span class="link-title">Payment SO</span>
+            </a>
+            </li>
           <li class="nav-item nav-category">DO</li>
           <li class="nav-item">
             <a href="{{url('/')}}" class="nav-link">
@@ -85,12 +91,18 @@
               <span class="link-title">View List DO</span>
             </a>
             </li>
+            
             <li class="nav-item">
             <a href="{{url('/')}}" class="nav-link">
               <i class="link-icon" data-feather="box"></i>
               <span class="link-title">Update DO</span>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="{{url('/')}}" class="nav-link">
+              <i class="link-icon" data-feather="box"></i>
+              <span class="link-title">Payment DO</span>
+            </a>
         <li class="nav-item nav-category">Transaction</li>
           <li class="nav-item">
             <a href="{{url('/')}}" class="nav-link">
@@ -105,11 +117,23 @@
               <span class="link-title">AR Customer</span>
             </a>
           </li>
-            <li class="nav-item">
+          <li class="nav-item">
             <a href="{{url('/')}}" class="nav-link">
               <i class="link-icon" data-feather="box"></i>
               <span class="link-title">AR Suplier</span>
-            </a>
+            </a> 
+          </li>
+          <li class="nav-item">
+            <a href="{{url('/')}}" class="nav-link">
+              <i class="link-icon" data-feather="box"></i>
+              <span class="link-title">Payment AR Customer</span>
+            </a> 
+          </li>
+          <li class="nav-item">
+            <a href="{{url('/')}}" class="nav-link">
+              <i class="link-icon" data-feather="box"></i>
+              <span class="link-title">Payment AR Suplier</span>
+            </a> 
           </li>
           <li class="nav-item nav-category">AP</li>
           <li class="nav-item">
@@ -122,6 +146,18 @@
             <a href="{{url('/')}}" class="nav-link">
               <i class="link-icon" data-feather="box"></i>
               <span class="link-title">AP Suplier</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url('/')}}" class="nav-link">
+              <i class="link-icon" data-feather="box"></i>
+              <span class="link-title">Payment AP Customer</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url('/')}}" class="nav-link">
+              <i class="link-icon" data-feather="box"></i>
+              <span class="link-title">Payment AP Suplier</span>
             </a>
           </li>
           <li class="nav-item nav-category">Customer</li>
@@ -148,41 +184,6 @@
             <a href="{{url('/')}}" class="nav-link">
               <i class="link-icon" data-feather="layout"></i>
               <span class="link-title">View List Suplier</span>
-            </a>
-          </li>
-          <li class="nav-item nav-category">Payment</li>
-          <li class="nav-item">
-            <a href="{{url('/')}}" class="nav-link">
-              <i class="link-icon" data-feather="box"></i>
-              <span class="link-title">Payment SO</span>
-            </a>
-            <li class="nav-item">
-            <a href="{{url('/')}}" class="nav-link">
-              <i class="link-icon" data-feather="box"></i>
-              <span class="link-title">Payment DO</span>
-            </a>
-            <li class="nav-item">
-            <a href="{{url('/')}}" class="nav-link">
-              <i class="link-icon" data-feather="box"></i>
-              <span class="link-title">Payment AR Customer</span>
-            </a>
-            </li>
-            <li class="nav-item">
-            <a href="{{url('/')}}" class="nav-link">
-              <i class="link-icon" data-feather="box"></i>
-              <span class="link-title">Payment AR Suplier</span>
-            </a>
-            </li>
-            <li class="nav-item">
-            <a href="{{url('/')}}" class="nav-link">
-              <i class="link-icon" data-feather="box"></i>
-              <span class="link-title">Payment AP Customer</span>
-            </a>
-            </li>
-            <li class="nav-item">
-            <a href="{{url('/')}}" class="nav-link">
-              <i class="link-icon" data-feather="box"></i>
-              <span class="link-title">Payment AP Suplier</span>
             </a>
           </li>
         </ul>

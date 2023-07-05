@@ -11,10 +11,10 @@ class CustomerController extends Controller
 {
     public  function index(){
       $customer = Customer::all();
-      return view('admin.tableCustomer',compact('customer'));
+      return view('admin.ViewList.tableCustomer',compact('customer'));
     }
     public function halamanStoreCustomer()  {
-      return view('admin.customerStore');
+      return view('admin.Input.customerStore');
     }
     public function storeCustomer(Request $request) {
       $request->validate([

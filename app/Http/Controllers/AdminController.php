@@ -14,15 +14,15 @@ class AdminController extends Controller{
     }  
     public function indexTable()  {
         $admins = Admin::all();
-        return view("admin.tables", compact('admins'));
+        return view("admin.ViewList.tables", compact('admins'));
     }
     public function halamanStoreAdmin()  {
-        return view("admin.store");
+        return view("admin.Input.store");
     }
 
     public function showCustomer() {
         $customers = Customer::all();
-        return view("admin.tableCustomer",compact('customers'));
+        return view("admin.ViewList.tableCustomer",compact('customers'));
     }
 
     public function show($id) {

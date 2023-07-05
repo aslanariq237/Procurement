@@ -29,10 +29,14 @@ return [
     | mailers below. You are free to add additional mailers as required.
     |
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Supported: "smtp", "sendmail", "mailgun", "ses",
 =======
     | Supported: "smtp", "sendmail", "mailgun", "ses", "ses-v2",
 >>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
+=======
+    | Supported: "smtp", "sendmail", "mailgun", "ses",
+>>>>>>> 13aaf85 (p1)
     |            "postmark", "log", "array", "failover"
     |
     */
@@ -41,16 +45,23 @@ return [
         'smtp' => [
             'transport' => 'smtp',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'url' => env('MAIL_URL'),
 >>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
+=======
+>>>>>>> 13aaf85 (p1)
             'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
             'port' => env('MAIL_PORT', 587),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
             'username' => env('MAIL_USERNAME'),
             'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
+<<<<<<< HEAD
             'local_domain' => env('MAIL_EHLO_DOMAIN'),
+=======
+            'auth_mode' => null,
+>>>>>>> 13aaf85 (p1)
         ],
 
         'ses' => [
@@ -60,26 +71,36 @@ return [
         'mailgun' => [
             'transport' => 'mailgun',
 <<<<<<< HEAD
-=======
-            // 'client' => [
-            //     'timeout' => 5,
-            // ],
->>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
-        ],
-
-        'postmark' => [
-            'transport' => 'postmark',
 <<<<<<< HEAD
 =======
             // 'client' => [
             //     'timeout' => 5,
             // ],
 >>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
+=======
+>>>>>>> 13aaf85 (p1)
+        ],
+
+        'postmark' => [
+            'transport' => 'postmark',
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            // 'client' => [
+            //     'timeout' => 5,
+            // ],
+>>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
+=======
+>>>>>>> 13aaf85 (p1)
         ],
 
         'sendmail' => [
             'transport' => 'sendmail',
+<<<<<<< HEAD
             'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -bs -i'),
+=======
+            'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -t -i'),
+>>>>>>> 13aaf85 (p1)
         ],
 
         'log' => [

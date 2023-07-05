@@ -53,9 +53,12 @@ return [
             'driver' => 'file',
             'path' => storage_path('framework/cache/data'),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'lock_path' => storage_path('framework/cache/data'),
 >>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
+=======
+>>>>>>> 13aaf85 (p1)
         ],
 
         'memcached' => [
@@ -103,6 +106,7 @@ return [
     | Cache Key Prefix
     |--------------------------------------------------------------------------
     |
+<<<<<<< HEAD
     | When utilizing the APC, database, memcached, Redis, or DynamoDB cache
     | stores there might be other applications using the same cache. For
     | that reason, you may prefix every cache key to avoid collisions.
@@ -110,5 +114,14 @@ return [
     */
 
     'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_cache_'),
+=======
+    | When utilizing a RAM based store such as APC or Memcached, there might
+    | be other applications utilizing the same cache. So, we'll specify a
+    | value to get prefixed to all our keys so we can avoid collisions.
+    |
+    */
+
+    'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_cache'),
+>>>>>>> 13aaf85 (p1)
 
 ];

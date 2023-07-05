@@ -1,6 +1,7 @@
 {
     "private": true,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     "type": "module",
 >>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
@@ -22,5 +23,21 @@
         "sass": "^1.56.1",
 >>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
         "vite": "^4.0.0"
+=======
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "axios": "^0.21",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14"
+>>>>>>> 13aaf85 (p1)
     }
 }

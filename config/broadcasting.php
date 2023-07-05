@@ -37,6 +37,7 @@ return [
             'app_id' => env('PUSHER_APP_ID'),
             'options' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 'cluster' => env('PUSHER_APP_CLUSTER'),
 >>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
@@ -48,6 +49,10 @@ return [
             ],
             'client_options' => [
                 // Guzzle client options: https://docs.guzzlephp.org/en/stable/request-options.html
+=======
+                'cluster' => env('PUSHER_APP_CLUSTER'),
+                'useTLS' => true,
+>>>>>>> 13aaf85 (p1)
             ],
         ],
 

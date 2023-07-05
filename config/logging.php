@@ -4,9 +4,12 @@ use Monolog\Handler\NullHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogUdpHandler;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Monolog\Processor\PsrLogMessageProcessor;
 >>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
+=======
+>>>>>>> 13aaf85 (p1)
 
 return [
 
@@ -34,10 +37,14 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'deprecations' => [
         'channel' => env('LOG_DEPRECATIONS_CHANNEL', 'null'),
         'trace' => false,
     ],
+=======
+    'deprecations' => env('LOG_DEPRECATIONS_CHANNEL', 'null'),
+>>>>>>> 13aaf85 (p1)
 
     /*
     |--------------------------------------------------------------------------
@@ -66,9 +73,12 @@ return [
             'path' => storage_path('logs/laravel.log'),
             'level' => env('LOG_LEVEL', 'debug'),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'replace_placeholders' => true,
 >>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
+=======
+>>>>>>> 13aaf85 (p1)
         ],
 
         'daily' => [
@@ -77,9 +87,12 @@ return [
             'level' => env('LOG_LEVEL', 'debug'),
             'days' => 14,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'replace_placeholders' => true,
 >>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
+=======
+>>>>>>> 13aaf85 (p1)
         ],
 
         'slack' => [
@@ -89,14 +102,18 @@ return [
             'emoji' => ':boom:',
             'level' => env('LOG_LEVEL', 'critical'),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'replace_placeholders' => true,
 >>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
+=======
+>>>>>>> 13aaf85 (p1)
         ],
 
         'papertrail' => [
             'driver' => 'monolog',
             'level' => env('LOG_LEVEL', 'debug'),
+<<<<<<< HEAD
             'handler' => env('LOG_PAPERTRAIL_HANDLER', SyslogUdpHandler::class),
             'handler_with' => [
                 'host' => env('PAPERTRAIL_URL'),
@@ -107,6 +124,13 @@ return [
 =======
             'processors' => [PsrLogMessageProcessor::class],
 >>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
+=======
+            'handler' => SyslogUdpHandler::class,
+            'handler_with' => [
+                'host' => env('PAPERTRAIL_URL'),
+                'port' => env('PAPERTRAIL_PORT'),
+            ],
+>>>>>>> 13aaf85 (p1)
         ],
 
         'stderr' => [
@@ -118,28 +142,37 @@ return [
                 'stream' => 'php://stderr',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'processors' => [PsrLogMessageProcessor::class],
 >>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
+=======
+>>>>>>> 13aaf85 (p1)
         ],
 
         'syslog' => [
             'driver' => 'syslog',
             'level' => env('LOG_LEVEL', 'debug'),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'facility' => LOG_USER,
             'replace_placeholders' => true,
 >>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
+=======
+>>>>>>> 13aaf85 (p1)
         ],
 
         'errorlog' => [
             'driver' => 'errorlog',
             'level' => env('LOG_LEVEL', 'debug'),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'replace_placeholders' => true,
 >>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
+=======
+>>>>>>> 13aaf85 (p1)
         ],
 
         'null' => [

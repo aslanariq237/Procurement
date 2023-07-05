@@ -2,7 +2,10 @@
 
 namespace Database\Seeders;
 
+<<<<<<< HEAD
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+=======
+>>>>>>> 13aaf85 (p1)
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -10,10 +13,14 @@ class DatabaseSeeder extends Seeder
     /**
      * Seed the application's database.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13aaf85 (p1)
      *
      * @return void
      */
     public function run()
+<<<<<<< HEAD
 =======
      */
     public function run(): void
@@ -25,5 +32,9 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+=======
+    {
+        // \App\Models\User::factory(10)->create();
+>>>>>>> 13aaf85 (p1)
     }
 }

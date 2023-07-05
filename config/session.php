@@ -72,7 +72,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'connection' => env('SESSION_CONNECTION'),
+=======
+    'connection' => env('SESSION_CONNECTION', null),
+>>>>>>> 13aaf85 (p1)
 
     /*
     |--------------------------------------------------------------------------
@@ -100,7 +104,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'store' => env('SESSION_STORE'),
+=======
+    'store' => env('SESSION_STORE', null),
+>>>>>>> 13aaf85 (p1)
 
     /*
     |--------------------------------------------------------------------------
@@ -155,7 +163,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'domain' => env('SESSION_DOMAIN'),
+=======
+    'domain' => env('SESSION_DOMAIN', null),
+>>>>>>> 13aaf85 (p1)
 
     /*
     |--------------------------------------------------------------------------

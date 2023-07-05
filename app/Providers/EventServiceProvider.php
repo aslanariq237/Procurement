@@ -10,7 +10,11 @@ use Illuminate\Support\Facades\Event;
 class EventServiceProvider extends ServiceProvider
 {
     /**
+<<<<<<< HEAD
      * The event to listener mappings for the application.
+=======
+     * The event listener mappings for the application.
+>>>>>>> 13aaf85 (p1)
      *
      * @var array<class-string, array<int, class-string>>
      */
@@ -23,10 +27,14 @@ class EventServiceProvider extends ServiceProvider
     /**
      * Register any events for your application.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13aaf85 (p1)
      *
      * @return void
      */
     public function boot()
+<<<<<<< HEAD
 =======
      */
     public function boot(): void
@@ -49,4 +57,9 @@ class EventServiceProvider extends ServiceProvider
     {
         return false;
     }
+=======
+    {
+        //
+    }
+>>>>>>> 13aaf85 (p1)
 }

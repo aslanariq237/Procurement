@@ -81,10 +81,14 @@ return [
     | separate password reset settings based on the specific user types.
     |
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13aaf85 (p1)
     | The expire time is the number of minutes that each reset token will be
     | considered valid. This security feature keeps tokens short-lived so
     | they have less time to be guessed. You may change this as needed.
     |
+<<<<<<< HEAD
 =======
     | The expiry time is the number of minutes that each reset token will be
     | considered valid. This security feature keeps tokens short-lived so
@@ -95,16 +99,22 @@ return [
     | quickly generating a very large amount of password reset tokens.
     |
 >>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
+=======
+>>>>>>> 13aaf85 (p1)
     */
 
     'passwords' => [
         'users' => [
             'provider' => 'users',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'table' => 'password_resets',
 =======
             'table' => 'password_reset_tokens',
 >>>>>>> 106f54eec92316c317e3f0b4a7294843f31cf997
+=======
+            'table' => 'password_resets',
+>>>>>>> 13aaf85 (p1)
             'expire' => 60,
             'throttle' => 60,
         ],
